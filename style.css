@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+
+
+/* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html
+{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #fc0303;
+    color: #e41212;
+}
+
+
+
+/* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */
+
+
+
+
+/* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */
+
+.header 
+{
+    background: #1D4A3C;
+    color: white;
+    padding: 25px 60px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 140px;
+}
+
+                        /* Panda logo */
+
+.logo-image 
+{
+    width: 42px;  
+    height: 42px; 
+    border-radius: 50%; 
+    object-fit: cover;  
+    border: 1px solid #EDE5C6;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.logo-text 
+{
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #F4F9F8;
+}
+
+                        /* Panda logo */
+
+
+                        /* Fresh buko - Top right */
+
+.top-right 
+{
+    margin-left: auto;
+    text-align: center;
+}
+
+.top-right h1 
+{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 32px;       
+    font-weight: 500;
+    color: #EDE5C6;
+}
+
+.top-right-info span 
+{
+    margin-top: 6px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.70;
+    letter-spacing: 0.3px;
+}
+
+                        /* Fresh buko - Top right */
+
+/* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */
+
+
+
+
+/* FIRST SECTION */ /* FIRST SECTIONT */ /* FIRST SECTION */ /* FIRST SECTION */ /* FIRST SECTION */
+
+section
+{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: #F4F9F8;
+}
+
+.home .home-content p
+{
+    color: #5F6E68;
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+.home-content h3
+{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+                            /* yung picture sa Home*/
+
+.home-img img
+{
+    width: 100%;
+    max-height: 700px;      
+    border-radius: 16px;     
+    display: block;
+    margin: 0 auto;         
+
+}
+
+                            /* yung picture sa Home*/
+
+
+                            /* yung "WELCOME" */
+
+.typing-text-home
+{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    color: #123C69;
+}
+
+.typing-text-home span
+{
+    position: relative;
+}
+
+.typing-text-home span::before
+{
+    content:"";
+    color: #1D4A3C;
+    animation: about 20s infinite;
+}
+
+.typing-text-home span::after
+{
+    content:"";
+    background-color: #F4F9F8;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid #EEE2DC;
+    animation: second 1s infinite;
+}
+
+                            /* Blinking cursor */
+
+@keyframes second
+{
+
+    to{
+        border-left: 3px solid #1D4A3C;
+    }
+}
+
+                            /* Blinking cursor */
+
+@keyframes about
+{
+    0%, 20%
+    {
+        content: "WELCOME";
+    }
+    21%, 40%
+    {
+        content: "APPLY NOW";
+    }
+    41%, 60%
+    {
+        content: "BEST BUKO";
+    }
+    61%, 80%
+    {
+        content: "APPLY NOW";
+    }
+    81%, 100%
+    {
+        content: "WELCOME";
+    }
+}
+
+                            /* yung "WELCOME" */
+
+
+                            /* yung "APPLY NOW" */
+
+.apply-link 
+{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: #EBE9E1;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-decoration: none;
+    margin-top: 2rem;
+    border: 2px solid #083a34;
+    border-radius: 4rem;
+}
+
+.apply-link:hover 
+{
+    transform: scale3d(1.03);
+    background-color: #D5A24A;
+    color: black;
+    box-shadow: 0 0 25px #D5A24A;
+}
+
+                            /* yung "APPLY NOW" */
+
+/* FIRST SECTION */ /* FIRST SECTIONT */ /* FIRST SECTION */ /* FIRST SECTION */ /* FIRST SECTION */
+
+
+
+
+/* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */
+
+.site-footer 
+{
+    background-color: #1D4A3C;
+    padding: 2rem 9%;
+    border-top: 2px solid #f6dce4;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
+}
+
+.footer-content 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-right 
+{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-right a 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #EDE5C6;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: #EDE5C6;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-right a:hover 
+{
+    background-color: #D5A24A;
+    color: #AC3B61;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px white;
+}
+
+
+.footer-bottom 
+{
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.95rem;
+    opacity: 0.85;
+    color: #EDE5C6;
+}
+
+.footer-bottom a 
+{
+    color: #EDE5C6;
+    margin: 0 0.8rem;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.footer-bottom a:hover 
+{
+    color: #D5A24A;
+    text-decoration: underline;
+}
+
+/* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */
